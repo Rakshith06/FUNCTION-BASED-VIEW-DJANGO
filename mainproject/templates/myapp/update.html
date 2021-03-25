@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crud Operation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  </head>
+  <body bgcolor="#42f5ef">
+    <div class="container" align="center">
+    <h1>Updation form</h1>
+    <form method="post">
+      Eno:<input type="text" name="eno" value="{{emp.eno}}">
+      Ename:<input type="text" name="ename" value="{{emp.ename}}">
+      Esal:<input type="text" name="esal" value="{{emp.esal}}">
+      Eadd:<input type="text" name="eadd" value="{{emp.eadd}}">
+      {% csrf_token %}
+      <input type="submit"  class="btn btn-lg btn-primary"value="submit">
+
+      </form>
+      </div>
+
+  </body>
+</html>
